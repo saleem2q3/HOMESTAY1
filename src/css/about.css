@@ -1,0 +1,63 @@
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .about-page {
+    padding: 50px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .video-section {
+    margin-bottom: 30px;
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  .about-section h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .about-section p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .mission-container {
+    display: flex;
+    gap: 30px;
+    margin-top: 40px;
+  }
+  
+  .mission {
+    flex: 1;
+  }
+  
+  .mission h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .mission p {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  /* Animation */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

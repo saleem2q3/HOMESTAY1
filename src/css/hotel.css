@@ -1,0 +1,137 @@
+.big-video {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+
+  
+/* Main container for the hotel section */
+.hotel-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 2rem;
+  background-color: #f8f8f8;
+}
+
+/* Wrapper for the hotel section */
+.hotel-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  max-width: 1200px;
+  width: 100%;
+  padding: 2rem;
+  background-color: #f8f8f8;
+
+}
+
+/* Styling for images container */
+.hotel-images {
+  position: relative;
+  flex: 1;
+  max-width: 50%; /* Images container takes up 50% width */
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Individual image styles */
+.image {
+  width: 90%; /* Ensures the image scales larger within the container */
+  height: auto; /* Maintains aspect ratio */
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  object-fit: cover; /* Ensures the image fills its container proportionally */
+  position: absolute;
+}
+
+.image-top {
+  margin-top: 15px; /* Adjusted to fit better within the container */
+  left: 5%; /* Provides neat padding */
+}
+
+.image-bottom {
+  bottom: 5%; /* Adjusted for better alignment */
+  right: 5%; /* Provides neat padding */
+}
+
+/* Content styling */
+.hotel-content {
+  flex: 1;
+  text-align: left;
+  padding-left: 1rem;
+}
+
+.tagline {
+  font-size: 0.9rem;
+  color: #007bff;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  letter-spacing: 1px;
+}
+
+/* Horizontal line below tagline */
+.line {
+  width: 50px;
+  height: 3px;
+  background: #007bff;
+  margin: 0.5rem 0 1rem 0;
+}
+
+.title {
+  font-size: 2.5rem;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.description {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.read-more {
+  display: inline-block;
+  padding: 0.7rem 1.5rem;
+  font-size: 0.9rem;
+  color: white;
+  background: #007bff;
+  border: none;
+  border-radius: 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.read-more:hover {
+  background: #007bff;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .hotel-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hotel-images {
+    max-width: 100%;
+  }
+
+  .hotel-content {
+    padding: 0;
+  }
+}
+
+

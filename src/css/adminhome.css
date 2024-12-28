@@ -1,0 +1,51 @@
+
+.admin_navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #007bff;
+  padding: 10px 20px;
+  color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar_brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar_links {
+  display: flex;
+  align-items: center;
+}
+
+.logout_button {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 15px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.logout_button:hover {
+  background-color: #e63939;
+  transform: scale(1.05);
+}
+
+.logout_button:active {
+  transform: scale(0.95);
+}
+
+/* Admin Container Styles */
+.admin_container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.admin_container h1 {
+  font-size: 2rem;
+  color: #333;
+}

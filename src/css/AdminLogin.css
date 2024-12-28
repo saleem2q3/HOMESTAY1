@@ -1,0 +1,148 @@
+
+  
+  .admin_login_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    max-width: 1000px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 20px;
+    margin-left: 250px;
+  }
+  
+  .admin_login_box {
+    width: 100%;
+    max-width: 400px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .admin_login_title {
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  /* Error message */
+  .admin_error_message {
+    color: red;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    text-align: center;
+  }
+  
+  /* Form */
+  .admin_form {
+    width: 100%;
+  }
+  
+  .admin_form_group {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  
+  .admin_form_group label {
+    display: block;
+    font-size: 1rem;
+    color: #34495e;
+  }
+  
+  .admin_form_group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  
+  .admin_form_group input:focus {
+    border-color: #3498db;
+  }
+  
+  /* Submit Button */
+  .admin_login_button {
+    width: 100%;
+    padding: 15px;
+    font-size: 1rem;
+    background-color: #3498db;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .admin_login_button:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Forgot Password, Signup, and Google Login links */
+  .forgot_password {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .signup_option {
+    text-align: center;
+    margin-top: 15px;
+  }
+  
+  .signup_option p {
+    font-size: 0.9rem;
+    color: #34495e;
+  }
+  
+  .google_login {
+    text-align: center;
+    margin-top: 15px;
+  }
+  
+  .google_button {
+    background-color: #db4437;
+    color: white;
+    padding: 12px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+    width: 100%;
+    cursor: pointer;
+  }
+  
+  .google_button:hover {
+    background-color: #c1351d;
+  }
+  
+  /* Illustration Styles */
+  .admin_illustration {
+    width: 45%;
+    text-align: center;
+    animation: slideIn 1.5s ease-in-out;
+  }
+  
+  .illustration_image {
+    max-width: 100%;
+    height: auto;
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  

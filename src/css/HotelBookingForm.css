@@ -1,0 +1,121 @@
+/* HotelBookingForm.css */
+
+.hotel_book_form {
+    width: 100%;
+    max-width: 500px; /* Increased for better appearance */
+    margin: 0 auto;
+    padding: 25px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative; /* Removed absolute positioning for better layout handling */
+   margin-top: -150px;
+    margin-left: 800px;
+    transform: translateY(-50%);
+  }
+  
+  .hotel_book_form .form-group-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Space between form groups */
+    margin-bottom: 20px;
+    flex-wrap: wrap; /* Ensure wrapping on smaller screens */
+  }
+  
+  .hotel_book_form .form-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    min-width: 150px; /* Minimum width for smaller screens */
+  }
+  
+  .hotel_book_form .form-group label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 8px;
+  }
+  
+  .hotel_book_form .form-group input,
+  .hotel_book_form .form-group select {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #fff;
+    color: #333;
+  }
+  
+  .hotel_book_form .form-group input:focus,
+  .hotel_book_form .form-group select:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  .hotel_book_form button.check-availability-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .hotel_book_form button.check-availability-btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.02);
+  }
+  
+  .hotel_book_form button.check-availability-btn:active {
+    background-color: #003f87;
+    transform: scale(0.98);
+  }
+  
+  @media screen and (max-width: 768px) {
+    .hotel_book_form {
+      max-width: 90%;
+      padding: 15px;
+      top: initial;
+      transform: initial;
+    }
+  
+    .hotel_book_form .form-group-container {
+      flex-direction: column;
+      gap: 15px;
+    }
+  
+    .hotel_book_form .form-group {
+      width: 100%;
+    }
+  
+    .hotel_book_form button.check-availability-btn {
+      font-size: 14px;
+      padding: 10px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .hotel_book_form {
+      max-width: 100%;
+      padding: 10px;
+    }
+  
+    .hotel_book_form .form-group input,
+    .hotel_book_form .form-group select {
+      font-size: 12px;
+      padding: 8px;
+    }
+  
+    .hotel_book_form button.check-availability-btn {
+      font-size: 13px;
+      padding: 8px;
+    }
+  }
+  

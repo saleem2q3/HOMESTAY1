@@ -1,0 +1,145 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh; /* Full viewport height */
+    padding: 40px; /* Reduced padding */
+    margin-left: -10px;
+    margin-bottom: 120px; /* Adjusted margin for better alignment */
+}
+
+.signup-container {
+    display: flex;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-left: 200px; /* Reduced margin for compact layout */
+    overflow: hidden;
+    max-width: 1000px; /* Reduced max width for smaller container */
+    width: 100%;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.form-container {
+    padding: 20px; /* Reduced padding for compact spacing */
+    flex: 1;
+}
+
+.form-title {
+    margin-bottom: 20px; /* Reduced margin for compact spacing */
+    font-size: 24px; /* Slightly smaller font size */
+    color: #333;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px; /* Reduced gap for compact layout */
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.form-input {
+    width: 100%;
+    padding: 8px; /* Reduced padding for smaller input fields */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.form-input:focus {
+    background-color: rgb(186, 212, 241);
+}
+
+.form-message {
+    color: red;
+    font-size: 12px;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px; /* Reduced margin for compact layout */
+    grid-column: span 2;
+    gap: 15px; /* Reduced gap for smaller buttons */
+    text-decoration: none;
+}
+
+.form-button {
+    width: 48%;
+    padding: 8px; /* Reduced padding for smaller buttons */
+    border: none;
+    border-radius: 5px;
+    font-size: 14px; /* Smaller font size for compact design */
+    cursor: pointer;
+    transition: background-color 0.3s;
+    outline: none;
+    text-align: center;
+    color: #fff;
+}
+
+.btn.sign-up {
+    background-color: #28a745;
+}
+
+.btn.sign-up:hover {
+    background-color: #218838;
+}
+
+.btn.back-to-login {
+    background-color: #007bff;
+    text-decoration: none;
+}
+
+.btn.back-to-login:hover {
+    background-color: #0056b3;
+}
+
+.sign-in-link {
+    text-align: center;
+    margin-top: 15px; /* Reduced margin */
+    font-size: 12px; /* Smaller font size for compact design */
+    color: #555;
+    grid-column: span 2;
+}
+
+.sign-in-link a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.sign-in-link a:hover {
+    color: #0056b3;
+}
+
+.image-container {
+    flex: 1;
+    background-color: rgb(186, 212, 241);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px; /* Reduced padding for compact spacing */
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
